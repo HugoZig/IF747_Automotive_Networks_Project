@@ -11,7 +11,7 @@ ids = {    #[dp, media, flag, timeStamp]
 }
 
 def check_timestamp(timestamp, dp, mean):
-    if (mean+1*dp) >= timestamp and (mean-1*dp) <= timestamp:
+    if (mean+3*dp) >= timestamp and (mean-3*dp) <= timestamp:
         return True
     else:
         return False
